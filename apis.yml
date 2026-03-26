@@ -1,0 +1,28 @@
+aid: seneca
+name: Seneca
+description: >-
+  Seneca is a microservices toolkit for Node.js that provides pattern-based message handling and transport independence.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Microservices
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/seneca/refs/heads/main/apis.yml
+created: '2026-03-26'
+modified: '2026-03-26'
+specificationVersion: '0.19'
+apis:
+  - aid: seneca:seneca
+    name: Seneca
+    description: >-
+      Seneca is a microservices toolkit for Node.js that provides pattern-based message handling and transport independence.
+    humanURL: https://github.com/api-evangelist/seneca
+    tags:
+      - Microservices
+    properties: []
+common:
+  - type: Website
+    url: https://github.com/api-evangelist/seneca
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
