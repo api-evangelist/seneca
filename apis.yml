@@ -1,11 +1,21 @@
 aid: seneca
 name: Seneca
 description: >-
-  Seneca is a microservices toolkit for Node.js that provides pattern-based message handling and transport independence.
+  Seneca is a microservices toolkit for Node.js that uses a pattern-matching
+  approach to message handling. It provides transport independence, allowing
+  services to communicate over HTTP, TCP, or message queues without changing
+  business logic. Seneca emphasizes simplicity and composability through its
+  plugin-based architecture.
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Microservices
+  - Node.js
+  - JavaScript
+  - Pattern Matching
+  - Message Handling
+  - Plugins
+  - Frameworks
 url: >-
   https://raw.githubusercontent.com/api-evangelist/seneca/refs/heads/main/apis.yml
 created: '2026-03-26'
@@ -15,14 +25,32 @@ apis:
   - aid: seneca:seneca
     name: Seneca
     description: >-
-      Seneca is a microservices toolkit for Node.js that provides pattern-based message handling and transport independence.
-    humanURL: https://github.com/api-evangelist/seneca
+      Seneca is a microservices toolkit for Node.js that uses a
+      pattern-matching approach to message handling. It provides transport
+      independence, allowing services to communicate over HTTP, TCP, or message
+      queues without changing business logic. Seneca emphasizes simplicity and
+      composability through its plugin-based architecture.
+    humanURL: https://senecajs.org/
     tags:
       - Microservices
+      - Node.js
+      - JavaScript
+      - Pattern Matching
+      - Message Handling
+      - Plugins
+      - Frameworks
     properties: []
 common:
   - type: Website
-    url: https://github.com/api-evangelist/seneca
+    url: https://senecajs.org/
+  - type: Getting Started
+    url: https://senecajs.org/getting-started/
+  - type: GitHub Organization
+    url: https://github.com/senecajs
+  - type: GitHub Repository
+    url: https://github.com/senecajs/seneca
+  - type: Plugins
+    url: https://senecajs.org/plugins/
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
