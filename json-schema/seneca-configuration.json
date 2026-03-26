@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/api-evangelist/seneca/json-schema/seneca-configuration.json",
+  "title": "Seneca Configuration",
+  "description": "JSON Schema for Seneca microservices toolkit configuration including plugin and transport options.",
+  "type": "object",
+  "properties": {
+    "tag": {
+      "type": "string",
+      "description": "Tag to identify this Seneca instance."
+    },
+    "timeout": {
+      "type": "integer",
+      "default": 22222,
+      "description": "Default action timeout in milliseconds."
+    },
+    "log": {
+      "oneOf": [
+        { "type": "string", "enum": ["silent", "quiet", "any", "all", "test", "print"] },
+        {
+          "type": "object",
+          "properties": {
+            "level": {
+              "type": "string",
+              "enum": ["debug", "info", "warn", "error", "fatal", "none"],
+              "description": "Log level."
+            },
+            "logger": {
+              "type": "string",
+              "description": "Logger implementation."
+            }
+          }
+        }
+      ],
+      "description": "Logging configuration."
+    },
+    "debug": {
+      "type": "object",
+      "properties": {
+        "undead": {
+          "type": "boolean",
+          "default": false,
+          "description": "Keep process alive on fatal errors."
+        },
+        "short_logs": {
+          "type": "boolean",
+          "default": false,
+          "description": "Use shortened log output."
+        },
+        "callpoint": {
+          "type": "boolean",
+          "default": false,
+          "description": "Include callpoint in logs."
+        }
+      }
+    },
+    "plugin": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "description": "Plugin-specific configuration options."
+      },
+      "description": "Plugin configurations keyed by plugin name."
+    },
+    "transport": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["tcp", "http", "web"],
+          "default": "http",
+          "description": "Transport type."
+        },
+        "web": {
+          "type": "object",
+          "properties": {
+            "port": {
+              "type": "integer",
+              "default": 10101,
+              "description": "HTTP port for web transport."
+            },
+            "host": {
+              "type": "string",
+              "default": "0.0.0.0",
+              "description": "HTTP host for web transport."
+            }
+          }
+        },
+        "tcp": {
+          "type": "object",
+          "properties": {
+            "port": {
+              "type": "integer",
+              "default": 10201,
+              "description": "TCP port."
+            },
+            "host": {
+              "type": "string",
+              "default": "0.0.0.0",
+              "description": "TCP host."
+            }
+          }
+        }
+      }
+    },
+    "errhandler": {
+      "type": "string",
+      "description": "Error handler function reference."
+    },
+    "legacy": {
+      "type": "object",
+      "properties": {
+        "transport": {
+          "type": "boolean",
+          "default": false,
+          "description": "Use legacy transport."
+        },
+        "error_codes": {
+          "type": "boolean",
+          "default": false,
+          "description": "Use legacy error codes."
+        }
+      }
+    }
+  }
+}

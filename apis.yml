@@ -39,7 +39,10 @@ apis:
       - Message Handling
       - Plugins
       - Frameworks
-    properties: []
+    properties:
+      - type: JSONSchema
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/seneca/refs/heads/main/json-schema/seneca-configuration.json
 common:
   - type: Website
     url: https://senecajs.org/
