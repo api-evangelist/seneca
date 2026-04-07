@@ -9,13 +9,13 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
+  - Frameworks
+  - JavaScript
+  - Message Handling
   - Microservices
   - Node.js
-  - JavaScript
   - Pattern Matching
-  - Message Handling
   - Plugins
-  - Frameworks
 url: >-
   https://raw.githubusercontent.com/api-evangelist/seneca/refs/heads/main/apis.yml
 created: '2026-03-26'
@@ -32,13 +32,13 @@ apis:
       composability through its plugin-based architecture.
     humanURL: https://senecajs.org/
     tags:
+      - Frameworks
+      - JavaScript
+      - Message Handling
       - Microservices
       - Node.js
-      - JavaScript
       - Pattern Matching
-      - Message Handling
       - Plugins
-      - Frameworks
     properties:
       - type: JSONSchema
         url: >-
