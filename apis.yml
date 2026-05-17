@@ -46,11 +46,11 @@ apis:
 common:
   - type: Website
     url: https://senecajs.org/
-  - type: Getting Started
+  - type: GettingStarted
     url: https://senecajs.org/getting-started/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/senecajs
-  - type: GitHub Repository
+  - type: GitHubRepository
     url: https://github.com/senecajs/seneca
   - type: Plugins
     url: https://senecajs.org/plugins/
