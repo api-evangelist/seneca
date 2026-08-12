@@ -56,6 +56,9 @@ apis:
         url: >-
           https://raw.githubusercontent.com/api-evangelist/seneca/refs/heads/main/json-schema/seneca-configuration.json
 common:
+  - type: License
+    name: MIT
+    url: https://github.com/senecajs/seneca/blob/master/LICENSE
   - type: DomainSecurity
     url: security/seneca-domain-security.yml
   - type: Website
