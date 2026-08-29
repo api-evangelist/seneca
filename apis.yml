@@ -7,6 +7,18 @@ description: >-
   business logic. Seneca emphasizes simplicity and composability through its
   plugin-based architecture.
 type: Index
+deliveryModel:
+  model: self-hosted
+  license: MIT
+  open_source: true
+  commercial: false
+  callable_host: false
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -56,6 +68,12 @@ apis:
         url: >-
           https://raw.githubusercontent.com/api-evangelist/seneca/refs/heads/main/json-schema/seneca-configuration.json
 common:
+  - type: IssueTracker
+    url: https://github.com/senecajs/seneca/issues
+  - type: Releases
+    url: https://github.com/senecajs/seneca/releases
+  - type: CodeOfConduct
+    url: https://github.com/senecajs/seneca/blob/master/CODE_OF_CONDUCT.md
   - type: License
     name: MIT
     url: https://github.com/senecajs/seneca/blob/master/LICENSE
