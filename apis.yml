@@ -33,6 +33,14 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/seneca.png
 tags:
+  - Framework
+  - JavaScript
+  - Message Handling
+  - Microservices
+  - Node.js
+  - Pattern Matching
+  - Plugins
+tags_raw:
   - Frameworks
   - JavaScript
   - Message Handling
@@ -56,6 +64,14 @@ apis:
       composability through its plugin-based architecture.
     humanURL: https://senecajs.org/
     tags:
+      - Framework
+      - JavaScript
+      - Message Handling
+      - Microservices
+      - Node.js
+      - Pattern Matching
+      - Plugins
+    tags_raw:
       - Frameworks
       - JavaScript
       - Message Handling
